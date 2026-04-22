@@ -1,0 +1,32 @@
+/* Estilos generales del formulario */
+.contacto-layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* permite que se acomode en pantallas pequeñas */
+}
+
+.formulario, .aside-box {
+  flex: 1 1 300px; /* cada bloque ocupa mínimo 300px y se adapta */
+  box-sizing: border-box;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contacto-layout {
+    flex-direction: column; /* apila el formulario y el aside */
+  }
+
+  .formulario, .aside-box {
+    width: 100%; /* ocupan todo el ancho */
+  }
+
+  .acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .acciones button {
+    width: 100%; /* botones grandes y fáciles de tocar */
+  }
+}

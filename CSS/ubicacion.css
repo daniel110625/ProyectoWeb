@@ -1,0 +1,234 @@
+.seccion-ubicaciones {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-ubicaciones {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.intro-ubicaciones h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1f1f1f;
+}
+
+.intro-ubicaciones p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.contenedor-ubicaciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.provincia-info {
+  scroll-margin-top: 100px;
+}
+
+.card-ubicacion {
+  background: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  border-radius: 20px;
+  padding: 25px;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.card-ubicacion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card-ubicacion-info {
+  flex: 1;
+}
+
+.card-ubicacion h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.ubicacion-texto {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.telefono {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #118c2f;
+}
+
+.btn-ubicacion {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #118c2f;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #118c2f;
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.btn-ubicacion:hover {
+  background: #118c2f;
+  color: #fff;
+}
+
+.provincia-info:target .card-ubicacion {
+  border: 2px solid #118c2f;
+  transform: scale(1.02);
+  box-shadow: 0 14px 28px rgba(17, 140, 47, 0.18);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .contenedor-ubicaciones {
+    grid-template-columns: 1fr;
+  }
+
+  .card-ubicacion {
+    padding: 22px;
+  }
+
+  .card-ubicacion h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .seccion-ubicaciones {
+    padding: 40px 15px;
+  }
+
+  .intro-ubicaciones h2 {
+    font-size: 1.6rem;
+  }
+
+  .intro-ubicaciones p {
+    font-size: 0.95rem;
+  }
+
+  .card-ubicacion {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .card-ubicacion h3 {
+    font-size: 1.35rem;
+  }
+
+  .ubicacion-texto,
+  .telefono {
+    font-size: 1rem;
+  }
+
+  .btn-ubicacion {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+ /* Estilos de la sección de ubicación en el inicio */
+    .seccion-ubicacion-home {
+      background: #f4fbf7;
+      padding: 60px 20px;
+      border-top: 2px solid #e0ece5;
+    }
+    .ubicacion-home-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .ubicacion-tag {
+      display: inline-block;
+      background: #2e7d5a;
+      color: white;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .ubicacion-home-texto h2 {
+      color: #1f5b42;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 14px;
+    }
+    .ubicacion-home-texto p {
+      color: #5a7060;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .ubicacion-provincias-mini {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ubicacion-provincias-mini span {
+      background: white;
+      border: 1px solid #c8e6d4;
+      color: #2e7d5a;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+    .mapa-card {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 36px rgba(31,91,66,0.15);
+      border: 3px solid #c8e6d4;
+    }
+    .mapa-card img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .mapa-card:hover img { transform: scale(1.02); }
+    .mapa-tooltip {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(31,91,66,0.88);
+      color: white;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    @media (max-width: 860px) {
+      .ubicacion-home-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .ubicacion-home-mapa { order: -1; }
+    }

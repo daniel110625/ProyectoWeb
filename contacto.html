@@ -39,56 +39,95 @@
   </section>
 
   <main class="contacto-layout">
-    <form class="formulario" id="formContacto">
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" placeholder="Digite su nombre" required>
+  <form
+    class="formulario"
+    id="formContacto"
+    action="https://formsubmit.co/danidechira@gmail.com"
+    method="POST"
+  >
+    <label for="nombre">Nombre completo</label>
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      placeholder="Digite su nombre"
+      required
+    >
 
-      <label for="correo">Correo electrónico</label>
-      <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+    <label for="correo">Correo electrónico</label>
+    <input
+      type="email"
+      id="correo"
+      name="correo"
+      placeholder="ejemplo@correo.com"
+      required
+    >
 
-      <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" placeholder="+506 8888-8888">
+    <label for="telefono">Teléfono</label>
+    <input
+      type="tel"
+      id="telefono"
+      name="telefono"
+      placeholder="+506 8888-8888"
+    >
 
-      <label for="edad">Edad</label>
-      <input type="number" id="edad" min="1" placeholder="Digite su edad" required>
+    <label for="fechaNacimiento">Fecha de nacimiento</label>
+    <input
+      type="date"
+      id="fechaNacimiento"
+      name="fechaNacimiento"
+      required
+    >
 
-      <label for="fechaNacimiento">Fecha de nacimiento</label>
-      <input type="date" id="fechaNacimiento" required>
+    <p id="edadCalculada"></p>
 
-      <label for="servicio">Motivo de contacto</label>
-      <select id="servicio" required>
-        <option value="">Seleccione</option>
-        <option>Adopción</option>
-        <option>Donación</option>
-        <option>Voluntariado</option>
-        <option>Información general</option>
-      </select>
+    <label for="servicio">Motivo de contacto</label>
+    <select id="servicio" name="servicio" required>
+      <option value="">Seleccione</option>
+      <option value="Adopción">Adopción</option>
+      <option value="Donación">Donación</option>
+      <option value="Voluntariado">Voluntariado</option>
+      <option value="Información general">Información general</option>
+    </select>
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+    <label for="mensaje">Mensaje</label>
+    <textarea
+      id="mensaje"
+      name="mensaje"
+      rows="5"
+      placeholder="Cuéntanos en qué podemos ayudarte"
+      required
+    ></textarea>
 
-      <div class="check">
-        <input type="checkbox" id="acepta">
-        <label for="acepta">Acepto compartir mis datos para ser contactado.</label>
-      </div>
+    <div class="check">
+      <input type="checkbox" id="acepta" name="acepta" required>
+      <label for="acepta">Acepto compartir mis datos para ser contactado.</label>
+    </div>
 
-      <div class="acciones">
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
-      </div>
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde Huellas de Esperanza">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
-      <p id="mensajeEstado"></p>
-    </form>
+    <div class="acciones">
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar</button>
+    </div>
 
-    <aside class="aside-box">
-      <h3>Información del refugio</h3>
-      <p>Atendemos consultas relacionadas con adopciones responsables, apoyo comunitario y donaciones para el cuidado de los animales.</p>
-      <p><strong>Ubicación:</strong> San José, Costa Rica</p>
-      <p><strong>Correo:</strong> info@huellasdeesperanza.com</p>
-      <p><strong>Teléfono:</strong> +506 8888-8888</p>
-      <p><strong>Horario:</strong> Lunes a sábado, de 8:00 a.m. a 5:00 p.m.</p>
-    </aside>
-  </main>
+    <p id="mensajeEstado"></p>
+  </form>
+
+  <aside class="aside-box">
+    <h3>Información del refugio</h3>
+    <p>
+      Atendemos consultas relacionadas con adopciones responsables, apoyo comunitario
+      y donaciones para el cuidado de los animales.
+    </p>
+    <p><strong>Ubicación:</strong> San José, Costa Rica</p>
+    <p><strong>Correo:</strong> info@huellasdeesperanza.com</p>
+    <p><strong>Teléfono:</strong> +506 8888-8888</p>
+    <p><strong>Horario:</strong> Lunes a sábado, de 8:00 a.m. a 5:00 p.m.</p>
+  </aside>
+</main>
 
   <div class="centro" style="padding-top: 30px;">
     <a href="#" class="boton">Volver al menú principal</a>
@@ -106,9 +145,9 @@
         <a href="index.html">Inicio</a><br>
         <a href="adopciones.html">Adopciones</a><br>
         <a href="quienesSomos.html">Nosotros</a><br>
-        <a href="galeria.html">Galería</a><br>
         <a href="consejos.html">Consejos</a><br>
         <a href="contacto.html">Contacto</a>
+        <a href="ubicacion.html">Ubicación</a>
       </div>
 
       <div>

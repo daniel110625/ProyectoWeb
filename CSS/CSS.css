@@ -4,71 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f8f6f1;
-  color: #24312b;
-  line-height: 1.6;
-}
 
-img {
-  max-width: 100%;
-  display: block;
-}
 
-header {
-  background: #1f5b42;
-  color: #ffffff;
-  padding: 20px;
-}
 
-.logo {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.logo img {
-  display: flex;
-  width: 56px;
-  height: 56px;
-}
-
-.logo h1 {
-  display: flex;
-  font-size: 1.7rem;
-}
-
-nav {
-  background: #2e7d5a;
-}
-
-.menu {
-  max-width: 1100px;
-  margin: 0 auto;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.menu a {
-  display: block;
-  padding: 14px 18px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
 
 main,
 .seccion,

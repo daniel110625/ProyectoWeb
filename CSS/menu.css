@@ -87,25 +87,7 @@
     }
 
     /* Botones */
-    .botones { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
-    .boton {
-      display: inline-block;
-      padding: 13px 24px;
-      background: #2e7d5a;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 0.95rem;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .boton:hover { background: #1f5b42; transform: translateY(-2px); color: #fff; }
-    .boton-outline {
-      background: transparent;
-      border: 2px solid #2e7d5a;
-      color: #2e7d5a;
-    }
-    .boton-outline:hover { background: #2e7d5a; color: #fff; }
+    
 
     .stats-bar {
       background: #1f5b42;
